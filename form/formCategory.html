@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form jQM</title>
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile.theme-1.1.0.css" />
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile.structure-1.1.0.css" />
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.1.0.js"></script>
+        <script src="../js/category.js"></script>
+    </head>
+
+    <body>
+
+        <div data-role="page" id="formPage">
+
+            <div data-role="header">
+                <h1>Address</h1>
+            </div>
+
+            <div data-role="content">
+
+                <div data-role="fieldcontain">
+                    <label for="select-category" class="select">Category :</label>
+                    <select name="select-category" id="select-category">
+                        <option value="standard">Standard: 7 day</option>
+                        <option value="rush">Rush: 3 days</option>
+                        <option value="express">Express: next day</option>
+                        <option value="overnight">Overnight</option>
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="name">Nama :</label>
+                    <input type="text" name="name" id="name" value=""  />
+                </div>
+
+
+                <div data-role="fieldcontain">
+                    <label for="textarea">Alamat :</label>
+                    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="name">Kode Pos :</label>
+                    <input type="text" name="name" id="txtkodepos" value=""  />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="name">Telepon :</label>
+                    <input type="text" name="name" id="txttelepon" value=""  />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="name">Latitude :</label>
+                    <input type="text" name="name" id="txtlatitude" value=""  />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="name">Longtitude :</label>
+                    <input type="text" name="name" id="txtlongtitude" value=""  />
+                </div>
+
+                <div class="ui-body ui-body-b">
+                    <fieldset class="ui-grid-a">
+                        <div class="ui-block-a"><button type="submit" data-theme="b" data-icon="delete">Cancel</button></div>
+                        <div class="ui-block-b"><button type="submit" data-theme="b" data-icon="plus">Add</button></div>
+                    </fieldset>
+                </div>
+
+                <div data-role="footer" data-position="fixed" data-id="footer">
+                    <h2>jQM</h2>
+                </div>
+
+            </div>
+
+    </body>
+
+</html>
